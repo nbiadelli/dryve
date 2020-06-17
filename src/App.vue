@@ -3,35 +3,39 @@
     <div id="nav">
       <SideBar />
       <NaveBar />
-      <!-- <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>-->
+      <router-view />
     </div>
-    <router-view />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
 import SideBar from "./components/SideBar.vue";
-import NaveBar from "./components/NaveBar.vue"
-
+import NaveBar from "./components/NaveBar.vue";
 
 export default {
   components: {
     SideBar,
-    NaveBar
+    NaveBar,
   },
 };
 </script>
 
 <style lang="scss">
+body {
+  background-color: #f3f4f6;
+  height: auto;
+  
+}
 #app {
   font-family: Inter-Regular_;
   text-align: center;
-
 }
 
 #nav {
   font-size: 14px;
+}
+
+.box{
+  padding-top: 73px;
 }
 </style>

@@ -6,13 +6,16 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "prettier:all": "prettier --config ./.prettierrc --write src/**/*.js  --write src/**/*.vue"
   },
   "dependencies": {
     "core-js": "^3.6.5",
     "material-design-icons": "^3.0.1",
     "vue": "^2.6.11",
+    "vue-google-charts": "^0.3.2",
     "vue-router": "^3.2.0",
+    "vuelidate": "^0.7.5",
     "vuetify": "^2.2.30",
     "vuex": "^3.4.0"
   },
